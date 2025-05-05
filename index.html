@@ -1,38 +1,181 @@
-<html>
-  <head>
-    <title>Lu Duc Hung</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/fontawesome-free-6.0.0-beta3-web/css/all.css">
-  </head>
- 
-  <body>
-    <h1>Hello, my name is Lu Duc Hung </h1>   
-       
-    <img width = "300" src="ldh3.jpg">
-    
-    <div>
-      My hobbies: </br>
-      Cooking </br>
-      Traveling </br>
-      Learning Korean </br>
-   </div>
-   
-   <p>Facebook:<a href="https://www.facebook.com/luduchung">Link facebook</a> </p>  
-  <div1>
-    <fora>
-      <label>Your questions about me </label>
-      <input type='text' placeholder='Question' />
-    </fora>
-    <button>
-      <a href="https://trung-tam-thac-mac.glitch.me"> Submit </a>
-    </button>
-  </div1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subheading {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0;
+        }
+        
+        @media (min-width: 768px) {
+            .main-content {
+                flex-direction: row;
+                gap: 3rem;
+            }
+        }
+        
+        .profile-section {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .bio-section {
+            flex: 2;
+        }
+        
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 5px solid #2c3e50;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .bio {
+            margin-bottom: 2rem;
+        }
+        
+        .skills-section {
+            background-color: #fff;
+            padding: 3rem 0;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .skill-item {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .contact-links {
+            margin-top: 1rem;
+        }
+        
+        .contact-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hoàng Trung Quân</h1>
+            <p class="subheading">AI engineer</p>
+        </div>
+    </header>
 
+    <section class="main-content container">
+        <div class="profile-section">
+            <img src="/api/placeholder/400/400" alt="Profile Photo" class="profile-image">
+            <p><em>Đa Nang, Viet Nam</em></p>
+        </div>
+        <div class="bio-section">
+            <h2>About Me</h2>
+            <div class="bio">
+                <p>Hello! I'm Your Name, and I'm passionate about what you do. This is where you can share your story, background, and what makes you unique.</p>
+                <p>You can include your education, career journey, personal interests, and whatever else you'd like visitors to know about you.</p>
+                <p>This paragraph can include more personal details, your philosophy, or your approach to your work and life.</p>
+            </div>
+            
+            <h2>My Experience</h2>
+            <div class="bio">
+                <p>You can describe your professional experience here. Include your most significant roles, achievements, and the impact you've made in your field.</p>
+                <p>You might want to highlight specific projects you've worked on or skills you've developed throughout your career journey.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="skills-section">
+        <div class="container">
+            <h2 style="text-align: center;">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">Skill 1</div>
+                <div class="skill-item">Skill 2</div>
+                <div class="skill-item">Skill 3</div>
+                <div class="skill-item">Skill 4</div>
+                <div class="skill-item">Skill 5</div>
+                <div class="skill-item">Skill 6</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Hoang Trung Quan. All Rights Reserved.</p>
+            <div class="contact-links">
+                <a href="mailto:quanht782619@gmail.com">Email</a>
+                <a href="linkedin.com/in/hoàng-trung-quân-a37595224" target="_blank">LinkedIn</a>
+                <a href="https://github.com/SeaMUSAnubis" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
